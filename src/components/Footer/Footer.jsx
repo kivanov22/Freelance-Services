@@ -1,12 +1,12 @@
-import React from 'react'
-import "./Footer.scss"
+import React from "react";
+import "./Footer.scss";
 
 const Footer = () => {
   return (
-    <div className='footer'>
+    <div className="footer">
       <div className="container">
         <div className="top">
-        <div className="item">
+          <div className="item">
             <h2>Categories</h2>
             <span>Graphics & Design</span>
             <span>Digital Marketing</span>
@@ -72,7 +72,7 @@ const Footer = () => {
             <span>© Liverr International Ltd. 2023</span>
           </div>
           <div className="right">
-          <div className="social">
+            <div className="social">
               <img src="/img/twitter.png" alt="" />
               <img src="/img/facebook.png" alt="" />
               <img src="/img/linkedin.png" alt="" />
@@ -92,7 +92,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
