@@ -14,6 +14,8 @@ import Add from './pages/add/Add.jsx';
 import Messages from './pages/messages/Messages.jsx';
 import Message from './pages/message/Message.jsx';
 import "./App.scss";
+import Login from './pages/login/Login.jsx';
+import Register from './pages/register/Register.jsx';
 
 
 function App() {
@@ -64,6 +66,14 @@ function App() {
         {
           path:"/message/:id",
           element:<Message />
+        },
+        {
+          path:"/login",
+          element:<Login />
+        },
+        {
+          path:"/register",
+          element:<Register />
         },
       ]
     },
