@@ -16,16 +16,25 @@ import Message from './pages/message/Message.jsx';
 import "./App.scss";
 import Login from './pages/login/Login.jsx';
 import Register from './pages/register/Register.jsx';
-
+import {
+QueryClient,
+QueryClientProvider,
+useQuery
+}from '@tanstack/react-query'
 
 function App() {
 
   const Layout=()=>{
+
+    const queryClient = new QueryClient()
+
     return (
       <div className="app">
+        <QueryClientProvider clinet={queryClient}>
         <Navbar />
          <Outlet />
          <Footer />
+        </QueryClientProvider>
       </div>
     )
   }
