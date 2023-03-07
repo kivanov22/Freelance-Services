@@ -4,7 +4,7 @@ import './Review.scss'
 
 const Review = ({review}) => {
     const { isLoading, error, data } = useQuery({
-        queryKey: ["reviewUser"],
+        queryKey: [review.userId],
         queryFn: () =>
           newRequest.get(`/users/${review.userId}`).then((res) => {
             return res.data;
