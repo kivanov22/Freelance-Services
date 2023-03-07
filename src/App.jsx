@@ -30,7 +30,7 @@ function App() {
 
     return (
       <div className="app">
-        <QueryClientProvider clinet={queryClient}>
+        <QueryClientProvider client={queryClient}>
         <Navbar />
          <Outlet />
          <Footer />

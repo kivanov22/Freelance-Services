@@ -48,16 +48,16 @@ export const getGigs = async (req, res, next) => {
   const q = req.query;
 
   const filters = {
-    ...(q.userId && { userId: q.userId }),//if there is a category spred the object, if not category wont create anything
+    ...(q.userId && { userId: q.userId }), //if there is a category spred the object, if not category wont create anything
     ...(q.category && { category: q.category }),
     ...((q.min || q.max) && {
-      price: { ...(q.min && { $gt: q.min }), ...(q.max && { $gt: q.max }) },//look for price min or max and check which one exists
+      price: { ...(q.min && { $gt: q.min }), ...(q.max && { $gt: q.max }) }, //look for price min or max and check which one exists
     }),
-    ...(q.search && { title: { $regex: q.search, $options: "i" } }),//case "i" insensitive
+    ...(q.search && { title: { $regex: q.search, $options: "i" } }), //case "i" insensitive
   };
 
   try {
-    const gigs = await Gig.find(filters);
+    const gigs = await Gig.find(filters).sort({ [q.sort]: -1 });
 
     if (!gigs) return next(createError(404, "No gigs found!"));
 
