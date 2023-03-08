@@ -7,7 +7,7 @@ const Message = () => {
     <div className='message'>
       <div className="container">
         <span className="breadcrumbs">
-          <Link to="/messages">MESSAGES</Link> > KRISTIAN IVANOV >
+          <Link to="/messages">MESSAGES</Link> {">"} KRISTIAN IVANOV {">"}
         </span>
 
         <div className="messages">
