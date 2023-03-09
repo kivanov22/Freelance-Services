@@ -5,13 +5,13 @@ import {
     getSingleConversation,
     updateConversation
 } from "../controllers/conversation.controller.js";
-import veirfyToken from "../middlewares/jwt.js";
+import { verifyToken } from "../middlewares/jwt.js";
 
 const router = express.Router()
 
-router.get("/",veirfyToken,getConversations);
-router.post("/",veirfyToken,createConversation);
-router.get("/single/:id",veirfyToken,getSingleConversation);
-router.post("/:id",veirfyToken,updateConversation);
+router.get("/",verifyToken,getConversations);
+router.post("/",verifyToken,createConversation);
+router.get("/single/:id",verifyToken,getSingleConversation);
+router.put("/:id",verifyToken,updateConversation);
 
 export default router;
