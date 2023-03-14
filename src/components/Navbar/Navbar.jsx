@@ -8,8 +8,8 @@ const Navbar = () => {
   const [active, setActive] = useState(false);
   const [open, setOpen] = useState(false);
 
-  const {pathname} = useLocation();
-  
+  const { pathname } = useLocation();
+
   const isActive = () => {
     window.scrollY > 0 ? setActive(true) : setActive(false);
   };
@@ -21,26 +21,26 @@ const Navbar = () => {
       window.removeEventListener("scroll", isActive);
     };
   }, []);
-  
+
   const currentUser = JSON.parse(localStorage.getItem("currentUser"));
   const navigate = useNavigate();
 
-  const handleLogout =async()=>{
+  const handleLogout = async () => {
     try {
-      await newRequest.post("/auth/logout")
-      localStorage.setItem("currentUser",null);
-      navigate("/")
+      await newRequest.post("/auth/logout");
+      localStorage.setItem("currentUser", null);
+      navigate("/");
     } catch (err) {
       console.log(err);
     }
-  }
+  };
 
   return (
     <div className={active || pathname !== "/" ? "navbar active" : "navbar"}>
       <div className="container">
         <div className="logo">
           <Link to="/" className="link">
-          <span className="text">fiverr</span>
+            <span className="text">fiverr</span>
           </Link>
           <span className="dot">.</span>
         </div>
@@ -79,7 +79,9 @@ const Navbar = () => {
             </div>
           ) : (
             <>
-              <Link to="/login" className="link">Sign in</Link>
+              <Link to="/login" className="link">
+                Sign in
+              </Link>
               <Link className="link" to="/register">
                 <button>Join</button>
               </Link>
@@ -87,11 +89,11 @@ const Navbar = () => {
           )}
         </div>
       </div>
-      {(active || pathname !== "/")  && (
+      {(active || pathname !== "/") && (
         <>
           <hr />
           <div className="menu">
-          <Link className="link menuLink" to="/">
+            <Link className="link menuLink" to="/">
               Graphics & Design
             </Link>
             <Link className="link menuLink" to="/">
