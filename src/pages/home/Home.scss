@@ -1,9 +1,14 @@
+// @import "../../styles/breakpoints.scss";
+@import "../../App.scss";
+
 .home {
   .features {
     background-color: #f1fdf7;
     display: flex;
     justify-content: center;
     padding: 100px 0px;
+
+    
 
     &.dark {
       background-color: #0d084d;
@@ -47,10 +52,20 @@
       align-items: center;
       gap: 200px;
 
+      @include tablet{
+        // width: 768px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+
       .item {
         display: flex;
         flex-direction: column;
         gap: 15px;
+
+       
 
         &:first-child {
           flex: 2;
@@ -63,6 +78,10 @@
         h1 {
           font-weight: 500;
           margin-bottom: 10px;
+
+          @include tablet{
+          text-align: center;
+          }
         }
         p {
           font-size: 18px;
@@ -87,6 +106,10 @@
         }
         video {
           width: 720px;
+
+          @include tablet{
+            width: 550px;
+          }
         }
       }
     }
@@ -99,8 +122,17 @@
     .container {
       width: 1400px;
 
+      @include tablet {
+        width: 768px;
+      }
+     
       h1 {
         color: #555;
+        @include tablet {
+          text-align: center;
+          // gap: 100px;
+        }
+  
       }
 
       .items {
