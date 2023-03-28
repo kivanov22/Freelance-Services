@@ -12,9 +12,9 @@ const Home = () => {
     <div className="home">
       <Featured />
       <TrustedBy />
-      <Slide slidesToShow={5} arrowsScroll={5}>
+      <Slide >
         {cards.map(card=>(
-          <CategoryCard key={card.id} card={card}/>
+            <CategoryCard key={card.id} card={card}/>
         ))}
       </Slide>
       <div className="features">

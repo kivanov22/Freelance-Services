@@ -1,8 +1,8 @@
 import { useQuery } from "@tanstack/react-query";
-import { Slider } from "infinite-react-carousel/lib/index.js";
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import Reviews from "../../components/reviews/Reviews.jsx";
+import Slide from "../../components/slide/Slide.jsx";
 import newRequest from "../../utils/newRequest.js";
 import "./Gig.scss";
 
@@ -69,11 +69,11 @@ const Gig = () => {
                 )}
               </div>
             )}
-            <Slider slidesToShow={1} arrowsScroll={1} className="slider">
+            <Slide >
               {data.images.map((img) => (
                 <img key={img} src={img} alt="" />
               ))}
-            </Slider>
+            </Slide>
             <h2>About This Gig</h2>
             <p>{data.desc}</p>
             {isLoadingUser ? "loading" : errorUser ? "Something went wrong!": <div className="seller">
