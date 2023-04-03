@@ -53,6 +53,8 @@
             color: #ffc108;
           }
         }
+
+        
       }
 
       .slider {
@@ -154,8 +156,14 @@
         }
       }
 
-      
+      .slide {
+        display: flex;
+        // justify-content: center;
+        padding: 100px 0px;
+      }
     }
+
+    
 
     .right {
       flex: 1;
@@ -183,54 +191,54 @@
         }
       }
 
-        p {
-          color: grey;
-          margin: 10px 0px;
-        }
+      p {
+        color: grey;
+        margin: 10px 0px;
+      }
 
-        .details {
+      .details {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .item {
           display: flex;
           align-items: center;
-          justify-content: space-between;
-
-          .item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-
-            img {
-              width: 20px;
-            }
-          }
-        }
-
-        .features {
-          display: flex;
-          flex-direction: column;
           gap: 10px;
 
-          .item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-weight: 300;
-            color: grey;
-
-            img {
-              width: 14px;
-            }
+          img {
+            width: 20px;
           }
         }
+      }
 
-        button {
-          background-color: #1dbf73;
-          padding: 10px;
-          color: white;
-          border: none;
-          font-weight: 500;
-          font-size: 18px;
-          cursor: pointer;
+      .features {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .item {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-weight: 300;
+          color: grey;
+
+          img {
+            width: 14px;
+          }
         }
+      }
+
+      button {
+        background-color: #1dbf73;
+        padding: 10px;
+        color: white;
+        border: none;
+        font-weight: 500;
+        font-size: 18px;
+        cursor: pointer;
+      }
     }
   }
 }

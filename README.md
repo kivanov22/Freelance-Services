@@ -11,17 +11,76 @@
   <a href="#license">License</a> •
 </p>
 
+## Project Screenshots
+Here is some project screenshots ..
+
+ - Homepage
+
+![](https://github.com/kivanov22/Freelance-Services/blob/main/project-photos/homepage-three.png)
+![](https://github.com/kivanov22/Freelance-Services/blob/main/project-photos/homepage-two.png)
+---
+
+- Carousel Category
+
+![](https://github.com/kivanov22/Freelance-Services/blob/main/project-photos/carousel-category.png)
+
+---
+
+- Video Section
+
+![](https://github.com/kivanov22/Freelance-Services/blob/main/project-photos/video-two.png)
+
+---
+
+- Marketplace Section
+
+![](https://github.com/kivanov22/Freelance-Services/blob/main/project-photos/marketplace.png)
+
+---
+
+- Gigs Page
+
+![](https://github.com/kivanov22/Freelance-Services/blob/main/project-photos/gigs-page.png)
+
+---
+
+- Chat Page
+
+![](https://github.com/kivanov22/Freelance-Services/blob/main/project-photos/chat-page.png)
+
+---
+
+- Messages Page
+
+![](https://github.com/kivanov22/Freelance-Services/blob/main/project-photos/messages-page.png)
+
+---
+
+- Orders Page
+
+![](https://github.com/kivanov22/Freelance-Services/blob/main/project-photos/orders-page.png)
+
+---
+
+- New Gig Page
+
+![](https://github.com/kivanov22/Freelance-Services/blob/main/project-photos/new-gig-add.png)
+
+---
+
+
 ## Key Features
 
 - Add New Product.
 - My List of products.
 - Chat option.
-- Login/Register
-- Filter Items
-- Sort Items
-- Search Items
-- Check Orders
-- Add Review and change rating
+- Login/Register.
+- Filter Items.
+- Sort Items.
+- Search Items.
+- Check Orders.
+- Add Review and change rating.
+
 
 ---
 
@@ -29,7 +88,7 @@
 - React
 - Sass
 - Vite
-- React Infinite Slider
+- Slick-carousel
 - Stripe
 - Cloudinary
 - MongoDb
@@ -43,5 +102,3 @@ Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ---
-
-//infinite-react-carousel

@@ -69,11 +69,13 @@ const Gig = () => {
                 )}
               </div>
             )}
-            <Slide >
+            {/* <div className="slide"> */}
+            <Slide className="slide">
               {data.images.map((img) => (
                 <img key={img} src={img} alt="" />
-              ))}
+                ))}
             </Slide>
+            {/* </div> */}
             <h2>About This Gig</h2>
             <p>{data.desc}</p>
             {isLoadingUser ? "loading" : errorUser ? "Something went wrong!": <div className="seller">
