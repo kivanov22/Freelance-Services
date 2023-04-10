@@ -5,7 +5,7 @@ import {
   Outlet,
 } from "react-router-dom";
 import Home from './pages/home/Home.jsx';
-import Footer from './components/Footer/Footer.jsx';
+import Footer from './components/footer/Footer.jsx';
 import Gigs from './pages/gigs/Gigs.jsx';
 import Gig from './pages/gig/Gig.jsx';
 import Orders from './pages/orders/Orders.jsx';
