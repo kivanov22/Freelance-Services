@@ -25,7 +25,8 @@ try {
 
 
 //http://localhost:5173
-app.use(cors({ origin: "https://freelance-services.vercel.app", credentials: true }));//http://127.0.0.1
+//{ origin: "https://freelance-services.vercel.app", credentials: true })
+app.use(cors({origin:"http://127.0.0.1:5173",credentials:true}));//http://127.0.0.1
 app.use(express.json());
 app.use(cookieParser());
 

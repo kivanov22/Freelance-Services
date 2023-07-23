@@ -15,7 +15,13 @@
 
 Demo here -> https://freelance-services.vercel.app/
 
+## Test Accounts
 
+- Username:seller
+- Password:seller
+
+- Username:kristian
+- Password:kristian
 ## Project Screenshots
 Here is some project screenshots ..
 
